@@ -131,11 +131,10 @@ class GoslingAgent(BaseAgent):
         current_score = get_game_score(packet)
         # TEMP quickchat debug print
         # print(QuickChats)
-        
-        
-        if self.previous_frame_opponent_score > current_score[not self.team]:
+        if self.ball.location.y < -5120:
             self.send_quick_chat(False, QuickChatSelection.Compliments_WhatASave)
-            print('YOUR BAD')
+            print('Troll')
+        
 
         if self.previous_frame_opponent_score < current_score[not self.team]:
             # self.send_quick_chat(QuickChats.CHAT_EVERYONE, QuickChats.Compliments_NiceShot)

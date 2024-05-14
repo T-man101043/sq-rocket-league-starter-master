@@ -69,8 +69,7 @@ class Bot(GoslingAgent):
         
 
 
-
-
+      
 
  #from rlbot.agents.base_agent import BaseAgent
 # from rlbot.utils.structures.quick_chats import QuickChats
